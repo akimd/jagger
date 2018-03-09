@@ -1,0 +1,69 @@
+// Options for JavaCC.
+options { LOOKAHEAD=1; FORCE_LA_CHECK=true; }
+
+// Fonction principale
+PARSER_BEGIN(Jagger)
+public class Jagger
+{
+    public static void main(String args[]) throws ParseException
+    {
+        Jagger parser = new Jagger(System.in);
+        parser.mainloop();
+    }
+}
+PARSER_END(Jagger)
+
+// Characters to ignore.
+SKIP: { " " | "\r" | "\t" }
+
+// Token specifications.
+TOKEN:
+{
+    < NUMBER: (<DIGIT>)+ ("." (<DIGIT>)*)? >  // A decimal number.
+|   < DIGIT: ["0"-"9"] >                      // A decimal digit.
+|   < EOL: "\n" >                             // End of line.
+}
+
+// Main lopp: read expressions on a line until end of file.
+//     mainloop → (expression <EOL>)* <EOF>
+void mainloop():
+{ double a; }
+{
+    (
+      a=expression() <EOL> { System.out.println(a); }
+    )*
+    <EOF>
+}
+
+// Expression (the axiom).
+// E -> T ('+'T | '-'T)*
+double expression():
+{ double a,b; }
+{
+    a=term()
+    (
+      "+" b=expression() { a += b; }
+    | "-" b=expression() { a -= b; }
+    )? { return a; }
+}
+
+// Term.
+// T -> F ('*'F | '/'F)*
+double term():
+{ double a,b; }
+{
+    a=factor()
+    (
+      "*" b=factor() { a *= b; }
+    | "/" b=factor() { a /= b; }
+    )* { return a; }
+}
+
+// Factor of an expression.
+// F -> <NUMBER> | "(" E ")"
+double factor():
+{ Token t; double e; }
+{
+      t=<NUMBER> { return Double.parseDouble(t.toString()); }
+    | "(" e=expression() ")" { return e; }
+}
