@@ -1,2 +1,2 @@
 # jagger
-Assignment: Java implementation of Kitty
+Assignment: Java implementation of Tigger
