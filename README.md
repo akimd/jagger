@@ -135,7 +135,7 @@ l'évaluation conduira à l'affichage de 1, 2, 3, et 4.
 
     let var i := 1
     in
-      while 1 < 4 do
+      while i < 4 do
         (print(i), i := i + 1)
     end
 
