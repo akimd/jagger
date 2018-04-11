@@ -14,7 +14,7 @@ notation finale du cours est ainsi faite :
     else
        max(project, controle)
 
-La date de rendu est le **13 avril**.
+La date de rendu est le **23 Avril 12h**.
 
 ## tarball correcte (1pt)
 Une tarball jagger-FOO.tar.bz2 où FOO est le nom du chef de groupe.  Quand on
