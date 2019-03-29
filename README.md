@@ -1,3 +1,31 @@
+Objectifs 
+=========
+
+L'objectif de ce projet est de vous faire construire un interpréteur et un pretty-printer
+pour un language simple. Ce projet  permet ainsi  de mettre en pratique bon nombre de concepts
+abordés lors de la partie front-end du compilateur.
+
+Ainsi, seront abordés:
+  - La définition d'un parseur et d'un lexeur au travers de Javacc (https://javacc.org)
+  - La mise en place d'un AST pour représenter les différents éléments du langage
+  - La mise en place d'un pretty-printer permettant de s'assurer que les étapes de parsing
+    et de scanning sont correctes
+  - La mise en place d'un évaluateur permettant d'interpréter le code fourni en entrée
+  - La mise en place de test et le packaging de l'application
+
+Afin de vous aider dans le démarrage du projet, nous vous donnons un exemple simple utilisant
+Javacc permettant de faire une calculette. Celle-ci devra être adaptée pour non plus
+construire les expressions dans le parseur mais retourner un AST qui sera ensuite traité par
+votre compilateur.
+
+N.B: La mise en place de l'interpréteur et du pretty-printer peuvent se faire au moyen
+d'un visiteur. Néanmoins, nous préférons un projet fonctionnel plutôt qu'un projet
+buttant sur l'implémentation dudit visiteur. 
+
+La syntaxe du langage que vous devez implémenter syntaxe s'apparente à
+celle du langage Tiger (https://www.lrde.epita.fr/~tiger/tiger.html).
+
+
 Règles d'évaluation
 ===================
 
