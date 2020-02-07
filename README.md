@@ -23,7 +23,7 @@ d'un visiteur. Néanmoins, nous préférons un projet fonctionnel plutôt qu'un 
 buttant sur l'implémentation dudit visiteur. 
 
 La syntaxe du langage que vous devez implémenter syntaxe s'apparente à
-celle du langage Tiger (https://www.lrde.epita.fr/~tiger/tiger.html).
+celle du langage Tiger (https://assignments.lrde.epita.fr/reference_manual/tiger_language_reference_manual/tiger_language_reference_manual.html).
 
 
 Règles d'évaluation
@@ -42,10 +42,10 @@ notation finale du cours est ainsi faite :
     else
        max(project, controle)
 
-La date de rendu est le **15 Avril 12h**.
+La date de rendu est le **10 Avril 12h**.
 
 ## tarball correcte (1pt)
-Une tarball jagger-FOO.tar.bz2 où FOO est le nom du chef de groupe.  Quand on
+Une tarball jagger-FOO.tar.bz2 (ou jagger-FOO.zip)  où FOO est le nom du chef de groupe.  Quand on
 ouvre cette tarball, elle fabrique un répertoire jagger-FOO dans lequel sont
 tous les fichiers.  Je ne veux pas de fichiers qui traîntent à côté de la
 tarball, ni de répertoire de nom différent.
