@@ -1,4 +1,4 @@
-Objectifs 
+Objectifs
 =========
 
 L'objectif de ce projet est de vous faire construire un interpréteur et un pretty-printer
@@ -20,7 +20,7 @@ votre compilateur.
 
 N.B: La mise en place de l'interpréteur et du pretty-printer peuvent se faire au moyen
 d'un visiteur. Néanmoins, nous préférons un projet fonctionnel plutôt qu'un projet
-buttant sur l'implémentation dudit visiteur. 
+buttant sur l'implémentation dudit visiteur.
 
 La syntaxe du langage que vous devez implémenter syntaxe s'apparente à
 celle du langage Tiger (https://assignments.lrde.epita.fr/reference_manual/tiger_language_reference_manual/tiger_language_reference_manual.html).
@@ -42,7 +42,7 @@ notation finale du cours est ainsi faite :
     else
        max(project, controle)
 
-La date de rendu est le **10 Avril 12h**.
+La date de rendu est le **20 Avril 12h**.
 
 ## tarball correcte (1pt)
 Une tarball jagger-FOO.tar.bz2 (ou jagger-FOO.zip)  où FOO est le nom du chef de groupe.  Quand on
