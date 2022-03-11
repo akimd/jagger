@@ -35,12 +35,7 @@ des défauts, nous serons cléments ; en revanche, s'attendre à une notation
 sévère sur un rendu mal fini.
 
 Une parfaite réalisation jusqu'au point "if-then-else" assure un 8/20.  La
-notation finale du cours est ainsi faite :
-
-    if min(project, controle) <= 6 / 20 then
-       (project + controle) / 2
-    else
-       max(project, controle)
+notation finale est uniquement faite au travers de l'évaluation de ce projet:
 
 La date de rendu est le **20 Avril 12h**.
 
